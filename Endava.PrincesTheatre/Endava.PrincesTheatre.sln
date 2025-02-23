@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endava.PrincesTheatre", "Endava.PrincesTheatre.csproj", "{1FD96FEC-26F6-4CFF-9602-E890FF16B421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endava.PrincesTheatre.Test", "..\Endava.PrincesTheatre.Test\Endava.PrincesTheatre.Test.csproj", "{95FCB0E4-986B-4017-BA20-E2EC40E84708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FD96FEC-26F6-4CFF-9602-E890FF16B421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD96FEC-26F6-4CFF-9602-E890FF16B421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD96FEC-26F6-4CFF-9602-E890FF16B421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD96FEC-26F6-4CFF-9602-E890FF16B421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95FCB0E4-986B-4017-BA20-E2EC40E84708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FCB0E4-986B-4017-BA20-E2EC40E84708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95FCB0E4-986B-4017-BA20-E2EC40E84708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95FCB0E4-986B-4017-BA20-E2EC40E84708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

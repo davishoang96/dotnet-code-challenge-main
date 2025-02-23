@@ -1,0 +1,55 @@
+﻿@model Endava.PrincesTheatre.Models.MoviesViewModel
+@{
+    ViewData["Title"] = "Prince's Theatre";
+}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <figure class="text-center">
+                    <h1>Prince's Theatre</h1>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <figure class="text-center">
+                    <h3>Classic Movies At Home</h3>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <figure class="text-center">
+                    <h5>
+                        Welcome to Prince’s theatre - a small independent theatre in the inner eastern suburbs of Melbourne that has been family run for over 50 years.
+                    </h5>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        @foreach (var movie in Model.Movies)
+                        {
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img src="@movie.Poster" class="card-img-top" alt="@movie.Title">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@movie.Title</h5>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">Cast: @movie.Actors</small>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">@movie.Prices![0].Provider <span class="badge rounded-pill bg-primary text-light float-end">$@movie.Prices![0].Price</span></li>
+                                            <li class="list-group-item">@movie.Prices![1].Provider <span class="badge rounded-pill bg-light text-dark float-end">$@movie.Prices![1].Price</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
